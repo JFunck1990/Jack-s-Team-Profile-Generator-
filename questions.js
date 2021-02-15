@@ -3,7 +3,8 @@ const questionsStart = [
         type: 'input',
         name: 'teamname',
         message:'What is your teams name?',
-      }
+      },
+
      
     ];
     // Manager Questions
@@ -15,17 +16,17 @@ const managerQuest = [
       },
       {
         type: "input",
-        message: "What is Managers office number?",
+        message: "What is the Managers office number?",
         name: "officeNumber"
       },
       {
         type: "input",
-        message: "What is Managers email address?",
+        message: "What is the Managers email address?",
         name: "email"
       },
       {
         type: "input",
-        message: "What is Managers ID number?",
+        message: "What is the Managers ID number?",
         name: "id"
       }
 
@@ -81,8 +82,8 @@ const newMemberQ = [{
     type: "list",
     message: "Would you like to enter another team member?",
     name: "add",
-    choices: ["yes", "no"]
-}]
+    choices: ["Intern", "Engineer", "No"]
+}];
 
     module.exports ={
         questionsStart,
