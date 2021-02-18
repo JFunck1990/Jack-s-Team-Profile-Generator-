@@ -4,17 +4,22 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const questions = require('./questions');
+const temp = require('./templates/temp');
+
 
 const teamArr = [];
-const teamN = "";
+
 
 function qStart () {
-    console.log("Wellcome to the Team Profile Generator! Please input for the following questions")
-inquire.prompt(questions.questionsStart).then(data => {
-const myTeamName = data.teamname;
- //teamN = data.teamname;
+    console.log("Welcome to the Team Profile Generator! Please input for the following questions");
+    
+    inquire.prompt(questions.questionsStart).then(data => {
+
+    const myTeamName = data.teamname;
+ 
     console.log("Your team name is: " + myTeamName);
     
+    teamArr.push(myTeamName);
 
      manStart();
 
@@ -24,12 +29,16 @@ const myTeamName = data.teamname;
 }
 
 function manStart () {
-    console.log("You are now in Manager questions")
+    console.log("Welcome to the Team Profile Generator! Please input for the following questions");
+
+    console.log("You are now in Manager questions");
+
  inquire.prompt(questions.managerQuest).then((res) => {
+
 const newManager = new Manager (res.name, res.id, res.email, res.officeNumber);
      
-teamArr.push(newManager);
-newMember();
+    teamArr.push(newManager);
+    newMember();
    });
 }
 
@@ -39,13 +48,13 @@ function internStart () {
     inquire.prompt(questions.internQuest).then(data =>{
         const newIntern = new Intern (data.name, data.id, data.email, data.school);
      
-teamArr.push(newIntern);
+    teamArr.push(newIntern);
         newMember();
       
     });
 }
 
-function engeneerStart (){
+function engineerStart (){
     console.log("You are now in Engineer questions");
     inquire.prompt(questions.engineerQuest).then(data =>{
         const newEng = new Engineer (data.name, data.id, data.email, data.github);
@@ -55,14 +64,19 @@ teamArr.push(newEng);
     });
 }
 
-function outputData(){
-    console.log("Inside output");
-}
+/*function outputData(){
+    //console.log("Inside output");
+    //console.log("this should be the title: " + teamArr[0]);
+const finalHtml = temp.renderHtml();
+
+fs.writeFile('./output/team.html', finalHtml);
+
+}*/
 
 function newMember () {
 inquire.prompt(questions.newMemberQ).then(function(res) {
 if(res.add === "Engineer"){
-engeneerStart();
+    engineerStart();
 }
 
 if(res.add === "Intern"){
@@ -70,28 +84,22 @@ if(res.add === "Intern"){
 }
 
 if(res.add === "No"){
-    outputData();
+    //outputData();
+    
+const finalHtml = temp.renderHtml(team);
+
+fs.writeFileSync('./output/team.html', finalHtml);
 }
 });
 
 }
+
 qStart();
 
 
- 
-
-//const TeamNameCard= `<nav class="navbar navbar-dark bg-dark mb-5">
- //<span class="navbar-brand mb-0 h1 w-100 text-center">Team ${myTeamName}</span>
-//</nav>`;
 
 
 
-
-
-
-
-/*fs.appendFileSync('sampleREADME.md', htmlGen);
-});*/
 
 
 
