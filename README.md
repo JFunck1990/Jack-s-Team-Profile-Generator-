@@ -9,6 +9,7 @@ A software engineering team generator command line application utilizing node.js
 Run this command in your Command line
 ```
 node index.js
+npm run test
 ```
 * Fill in the Manager prompts
 * Select as many Engineers/Interns you would like to add to your team
@@ -28,7 +29,7 @@ node index.js
 * inquirer
 
 
-#Tests
+# Tests
 <img src="./images/passTest.png">
  
   
