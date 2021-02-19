@@ -73,6 +73,7 @@ const finalHtml = temp.renderHtml();
 fs.writeFile('./output/team.html', finalHtml);
 
 }*/
+
 function newMember () {
 inquire.prompt(questions.newMemberQ).then(function(res) {
 if(res.add === "Engineer"){
@@ -97,7 +98,7 @@ fs.writeFileSync('./output/team.html', finalHtml);
 qStart();
 
 
-
+console.log("This is temp:" + temp);
 
 
 

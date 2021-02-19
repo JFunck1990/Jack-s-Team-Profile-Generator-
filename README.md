@@ -26,5 +26,9 @@ node index.js
 * fs
 * jest
 * inquirer
+
+
+#Tests
+<img src="./images/passTest.png">
  
   

@@ -9,3 +9,12 @@ describe("Manager Class", () => {
         expect(manager.officeNumber).toEqual(1111);
     });
 });
+
+test("Should return the value for each method for Manager", () => {
+    const newManager = new Manager("Jack", 222 , "johnDoe@gmail.com", 4546);
+    expect(newManager.getName()).toEqual(newManager.name);
+    expect(newManager.getId()).toEqual(newManager.id);
+    expect(newManager.getEmail()).toEqual(newManager.email);
+    expect(newManager.getOfficeNumber()).toEqual(newManager.officeNumber);
+    expect(newManager.getRole()).toEqual("Manager");
+  }) 

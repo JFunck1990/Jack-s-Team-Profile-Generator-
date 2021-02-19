@@ -10,3 +10,9 @@ describe("Employee Class", () => {
     });
 });
 
+test("Should return the value for each method for Employee", () => {
+    const newEmployee = new Employee("Jack", 2121 , "johnDoe@gmail.com");
+    expect(newEmployee.getName()).toEqual(newEmployee.name);
+    expect(newEmployee.getId()).toEqual(newEmployee.id);
+    expect(newEmployee.getEmail()).toEqual(newEmployee.email);
+}) 
