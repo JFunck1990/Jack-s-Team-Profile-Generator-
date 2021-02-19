@@ -8,7 +8,7 @@ A software engineering team generator command line application utilizing node.js
 ## How To Use
 Run this command in your Command line
 ```
-node app.js
+node index.js
 ```
 * Fill in the Manager prompts
 * Select as many Engineers/Interns you would like to add to your team
