@@ -94,70 +94,7 @@ ${createTeam(team)}
 
 
 
-/*const html = () => { return `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>${teamArr[0]}</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    </head>
-    <body>
-    <nav class="navbar navbar-dark bg-dark mb-5">
-        <span class="navbar-brand mb-0 h1 w-100 text-center">${teamArr[0]}</span>
-    </nav>
-<div class="container"
 
-${function gen (){
-
-}}
-
-</div>
-    
-</body>
-</html>`; }
-
-const genman= (man) =>{ return `<div class="row"><div class="col-6">
-<div class="card mx-auto mb-3" style="width: 18rem">
-<h5 class="card-header">Manager<br /><br />${man.name}</h5>
-<ul class="list-group list-group-flush">
-    <li class="list-group-item">${man.id}</li>
-    <li class="list-group-item">Email Address:${man.email}</li>
-    <li class="list-group-item">Office Number:${man.officeNumber}</li>
-</ul>
-</div>
-</div>`
- }
-
-
-
-
-const genEngineer = (eng) => { return `<div class="col-6">
-<div class="card mx-auto mb-3" style="width: 18rem">
-<h5 class="card-header">Engineer Neam<br /><br />Engineer</h5>
-<ul class="list-group list-group-flush">
-    <li class="list-group-item">ID: 2</li>
-    <li class="list-group-item">Email Address: email@gmail.com</li>
-    <li class="list-group-item">GitHub: TheGithubName</li>
-</ul>
-</div>
-</div>`;}
-
-const gernIntern =  (int) => { return `<div class="col-6">
-<div class="card mx-auto mb-3" style="width: 18rem">
-<h5 class="card-header">${int.name}<br /><br />Intern</h5>
-<ul class="list-group list-group-flush">
-    <li class="list-group-item">${int.id}</li>
-    <li class="list-group-item">${int.email}</li>
-    <li class="list-group-item">${int.school}</li>
-</ul>
-</div>
-</div> 
-`
-}*/
-
-//module.exports = html;
 
 
 

@@ -6,13 +6,14 @@ const Intern = require('./lib/Intern');
 const questions = require('./questions');
 const temp = require('./templates/temp');
 
+console.log("This is temp:" + temp);
 
 const teamArr = [];
 
 
 function qStart () {
     console.log("Welcome to the Team Profile Generator! Please input for the following questions");
-    
+
     inquire.prompt(questions.questionsStart).then(data => {
 
     const myTeamName = data.teamname;
@@ -72,7 +73,6 @@ const finalHtml = temp.renderHtml();
 fs.writeFile('./output/team.html', finalHtml);
 
 }*/
-
 function newMember () {
 inquire.prompt(questions.newMemberQ).then(function(res) {
 if(res.add === "Engineer"){
