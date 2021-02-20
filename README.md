@@ -51,7 +51,7 @@ npm run test
 # Video of how it works.
 > If you click GIF you will be navigated to YouTube.
 
-[![Team Profile Generator in use](https://gifs.com/gif/team-profile-generator-lxzNor)](https://youtu.be/DGZz-zE3pP0)
+[![Team Profile Generator in use](https://j.gifs.com/lxzNor.gif)](https://youtu.be/DGZz-zE3pP0)
 
 
 
