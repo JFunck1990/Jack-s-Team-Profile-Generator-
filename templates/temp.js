@@ -7,7 +7,7 @@ const createTeam = (team) => {
             <h5 class="card-header">Manager<br /><br />${manager.name}</h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">${manager.id}</li>
-                <li class="list-group-item">Email Address:${manager.email}</li>
+                <li class="list-group-item">Email Address:<a href="mailto">${manager.email}</a></li>
                 <li class="list-group-item">Office Number:${manager.officeNumber}</li>
             </ul>
         </div>
@@ -21,8 +21,8 @@ const createTeam = (team) => {
               <h5 class="card-header">${engineer.name}<br /><br />Engineer</h5>
               <ul class="list-group list-group-flush">
                   <li class="list-group-item">${engineer.id}</li>
-                  <li class="list-group-item">Email Address:${engineer.email}</li>
-                  <li class="list-group-item">GitHub:${engineer.github}</li>
+                  <li class="list-group-item">Email Address:<a href="mailto">${engineer.email}</a></li>
+                  <li class="list-group-item">GitHub:<a href="https://github.com/${engineer.github}">${engineer.github}</a></li>
               </ul>
           </div>
       </div>
@@ -36,7 +36,7 @@ const createTeam = (team) => {
               <h5 class="card-header">${intern.name}<br /><br />Intern</h5>
               <ul class="list-group list-group-flush">
                   <li class="list-group-item">${intern.id}</li>
-                  <li class="list-group-item">${intern.email}</li>
+                  <li class="list-group-item"><a href ="mailto">${intern.email}</a></li>
                   <li class="list-group-item">${intern.school}</li>
               </ul>
           </div>
