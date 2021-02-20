@@ -29,7 +29,7 @@ npm run test
 * Select as many Engineers/Interns you would like to add to your team
 * Fill in the information for selections
 * When finished select "No"  for "Would you like to enter another team member?".
-* Then navigate to the output folder and you will have a beautifully generated Html file of your team!
+* Then navigate to the output folder and you will have a beautifully generated Html file of your team (<a href="output/team.html">team.html</a>)!
 
 <a name="tc"></a>
 ## Technologies Used
